@@ -118,7 +118,7 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-    NSLog(@"Succeeded! Received %d bytes of data",[receivedData length]);
+    NSLog(@"Succeeded! Received %lu bytes of data",(unsigned long)[receivedData length]);
     
     NSError* e = nil;
     NSDictionary* dataDictionary = [NSJSONSerialization JSONObjectWithData: receivedData options: NSJSONReadingMutableContainers error: &e];
@@ -126,10 +126,10 @@
     NSArray* dataArray = [dataDictionary valueForKey:@"data"];
     NSMutableArray* dataMutableArray = [[NSMutableArray alloc] initWithArray:dataArray];
     
-    NSLog(@"Succeeded! Received %d bytes of data",[receivedData length]);
+    NSLog(@"Succeeded! Received %lu bytes of data",(unsigned long)[receivedData length]);
     
     // Find last created_time
-    int totalEntries = [dataArray count];
+    NSUInteger totalEntries = [dataArray count];
     if (totalEntries > 0)
     {
         NSDictionary* lastEntry = [dataArray objectAtIndex: totalEntries-1];

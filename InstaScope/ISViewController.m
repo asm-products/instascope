@@ -403,7 +403,7 @@
     NSData* dato = [NSData dataWithContentsOfURL:[NSURL URLWithString:[data valueForKey:@"path"]]];
     
     UIImage* image = [UIImage imageWithData:dato];
-    int picViewIndex = [[data valueForKey:@"imageViewIndex"] integerValue];
+    NSUInteger picViewIndex = [[data valueForKey:@"imageViewIndex"] integerValue];
     
     if ([imageViews count] > picViewIndex) {
         [[imageViews objectAtIndex: picViewIndex] performSelectorOnMainThread:@selector(setImage:) withObject:  image waitUntilDone:YES];

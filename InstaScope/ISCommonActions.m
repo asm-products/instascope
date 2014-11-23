@@ -57,7 +57,7 @@
     appDelegate.instagramAccessToken = instragramAccessToken;
 }
 
-+(int) totalLocations
++(NSInteger) totalLocations
 {
     NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
     NSArray* locations = [defaults objectForKey:@"locations"];
@@ -65,7 +65,7 @@
     return [locations count];
 }
 
-+(void) removeLocation: (int)locationIndex
++(void) removeLocation: (NSUInteger)locationIndex
 {
     NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
     NSArray* locations = [defaults objectForKey:@"locations"];
