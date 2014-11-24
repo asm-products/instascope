@@ -46,7 +46,7 @@
 
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
 @property (nonatomic, strong) id dataObject;
-@property (nonatomic) int locationsIndex;
+@property (nonatomic) NSUInteger locationsIndex;
 
 @property (nonatomic, strong) ISEmptyResultsViewController *emptyResults;
 

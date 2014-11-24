@@ -10,31 +10,31 @@
 	<string>InstaScope</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>64B5A4BE6882AA92725A251A5D7336F8943155DF</key>
-		<string>https://github.com/javierluraschi/Sandbox</string>
+		<key>62BE80B4DF7187DB12EAED9A646F217DC112D645</key>
+		<string>https://github.com/asm-products/instascope</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>InstaScope/InstaScope.xcodeproj</string>
+	<string>InstaScope.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>64B5A4BE6882AA92725A251A5D7336F8943155DF</key>
-		<string>../../..</string>
+		<key>62BE80B4DF7187DB12EAED9A646F217DC112D645</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/javierluraschi/Sandbox</string>
+	<string>https://github.com/asm-products/instascope</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>64B5A4BE6882AA92725A251A5D7336F8943155DF</string>
+	<string>62BE80B4DF7187DB12EAED9A646F217DC112D645</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>64B5A4BE6882AA92725A251A5D7336F8943155DF</string>
+			<string>62BE80B4DF7187DB12EAED9A646F217DC112D645</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Sandbox</string>
+			<string>instascope</string>
 		</dict>
 	</array>
 </dict>

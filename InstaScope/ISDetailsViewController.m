@@ -48,32 +48,7 @@
 {
     [Flurry logEvent:@"DetailsAppeared"];
     
-    //UIAccelerometer* accelerometer = [UIAccelerometer sharedAccelerometer];
-    //accelerometer.delegate = self;
-    //accelerometer.updateInterval = 1.0f / 60.0f;
-    
     [super viewDidAppear:animated];
-}
-
--(void)viewWillDisappear:(BOOL)animated
-{
-    [super viewWillDisappear:animated];
-    UIAccelerometer* accelerometer = [UIAccelerometer sharedAccelerometer];
-    accelerometer.delegate = nil;
-}
-
--(void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration
-{
-    float centerX = self.mainImage.center.x +
-    100.0f * (acceleration.x > 0.20 ? 0.05 : (acceleration.x < -0.20 ? -0.05 : 0.0));
-    
-    if (centerX - self.mainImage.frame.size.width / 2 + 5 > 0)
-        centerX = self.mainImage.frame.size.width / 2 - 5;
-    
-    if (centerX + self.mainImage.frame.size.width / 2 - 5 < self.view.frame.size.width)
-        centerX = self.view.frame.size.width - self.mainImage.frame.size.width / 2 + 5;
-    
-    self.mainImage.center = CGPointMake(centerX, self.mainImage.center.y);
 }
 
 -  (void)imageTapped:(UITapGestureRecognizer *)sender

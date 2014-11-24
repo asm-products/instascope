@@ -45,8 +45,8 @@
     radialDistance = 3000.0f; //2000.0f;
     triggerRefeshFromLocationChange = YES;
     
-    CLLocationCoordinate2D coord = {latitude: latitude, longitude: longitude};
-    MKCoordinateSpan span = {latitudeDelta: 0.02, longitudeDelta: 0.02};
+    CLLocationCoordinate2D coord = {.latitude =  latitude, .longitude =  longitude};
+    MKCoordinateSpan span = {.latitudeDelta =  0.02, .longitudeDelta =  0.02};
     MKCoordinateRegion region = {coord, span};
     [self.mapView setRegion:region];
     
@@ -403,7 +403,7 @@
     NSData* dato = [NSData dataWithContentsOfURL:[NSURL URLWithString:[data valueForKey:@"path"]]];
     
     UIImage* image = [UIImage imageWithData:dato];
-    int picViewIndex = [[data valueForKey:@"imageViewIndex"] integerValue];
+    NSUInteger picViewIndex = [[data valueForKey:@"imageViewIndex"] integerValue];
     
     if ([imageViews count] > picViewIndex) {
         [[imageViews objectAtIndex: picViewIndex] performSelectorOnMainThread:@selector(setImage:) withObject:  image waitUntilDone:YES];

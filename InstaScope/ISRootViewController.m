@@ -39,14 +39,8 @@
     appDelegate.pageModelController = self.modelController;
     
     ISViewController *startingViewController = [self.modelController viewControllerAtIndex:0 storyboard:self.storyboard];
-    NSArray *viewControllers = nil;
-  
     if (startingViewController != nil) {
-        viewControllers = @[startingViewController];
-        [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
-    }
-    else {
-        viewControllers = [[NSArray alloc] init];
+        [self.pageViewController setViewControllers:@[startingViewController] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     }
     
     self.pageViewController.dataSource = self.modelController;
@@ -66,6 +60,7 @@
 }
 
 - (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     if ([self.modelController viewControllerAtIndex:0 storyboard:self.storyboard] == nil) {
         [self performSegueWithIdentifier: @"SegueToSettingsModal" sender: self];
     }

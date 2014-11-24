@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 Javier Luraschi. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface InstaScopeTests : SenTestCase
+@interface InstaScopeTests : XCTestCase
 
 @end

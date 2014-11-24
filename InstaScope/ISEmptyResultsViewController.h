@@ -14,6 +14,6 @@
 }
 
 @property (weak, nonatomic) IBOutlet UIButton *removeButton;
-@property (nonatomic) int locationsIndex;
+@property (nonatomic) NSUInteger locationsIndex;
 
 @end

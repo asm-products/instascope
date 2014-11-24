@@ -15,8 +15,5 @@
 - (ISViewController*) viewControllerAtIndex: (NSUInteger)index storyboard: (UIStoryboard *)storyboard;
 - (NSUInteger)indexOfViewController: (ISViewController*)viewController;
 
-- (ISViewController*) viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
-- (NSUInteger) indexOfViewController:(ISViewController*) viewController;
-
 @end
 

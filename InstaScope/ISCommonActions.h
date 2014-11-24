@@ -17,8 +17,8 @@
 +(void) updateAccessToken: (NSString*)accessToken;
 +(void) loadAccessToken;
 
-+(int) totalLocations;
-+(void) removeLocation: (int)locationIndex;
++(NSInteger) totalLocations;
++(void) removeLocation: (NSUInteger)locationIndex;
 +(void) addLocation: (NSString*)name withLatitude: (double)latitude andLongitude: (double)longitude;
 
 +(bool) getSetting: (NSString*)name withDefault: (bool)value;
