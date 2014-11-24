@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="UWD-8T-62h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="UWD-8T-62h">
     <dependencies>
         <deployment version="1536" identifier="iOS"/>
         <development version="5100" identifier="xcode"/>
@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="CXP-IQ-n7D"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6AE-BU-juM">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ycq-r6-ySO">
@@ -152,7 +152,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="UWD-8T-62h" kind="modal" identifier="SegueToMain" id="S1N-64-QQT"/>
+                        <segue destination="UWD-8T-62h" kind="modal" identifier="SegueToMain2" id="vRm-u7-Izy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cJ-B5-VDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -234,7 +234,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1364" y="176"/>
+            <point key="canvasLocation" x="-1444" y="162"/>
         </scene>
         <!--Auth Controller-->
         <scene sceneID="6MD-TJ-HNx">
@@ -245,7 +245,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Fsp-7O-WGh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CvY-Ar-W6U">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HG8-Us-8b8">
@@ -279,7 +279,7 @@
                         <viewControllerLayoutGuide type="bottom" id="cCT-zm-K7D"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="S7r-fJ-y38">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="S" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tV3-un-MoV">
@@ -375,6 +375,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ZAa-AT-pr6">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D19-sS-fl3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="UWD-8T-62h" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="k5S-wz-QNS"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
@@ -393,7 +394,6 @@
                         <segue destination="YVl-sK-K42" kind="relationship" relationship="rootViewController" id="V2u-Y0-gYT"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D19-sS-fl3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-849" y="361"/>
         </scene>
@@ -487,7 +487,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="xVu-wr-lPX"/>
+        <segue reference="vRm-u7-Izy"/>
         <segue reference="yPL-EN-Fsx"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.90980398654937744" green="0.55686277151107788" blue="0.45490199327468872" alpha="1" colorSpace="deviceRGB"/>
