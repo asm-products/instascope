@@ -42,7 +42,7 @@
     
     ISAppDelegate *appDelegate = (ISAppDelegate *)[UIApplication sharedApplication].delegate;
     [appDelegate.navigationViewController.navigationController popToRootViewControllerAnimated:NO];
-    [self performSegueWithIdentifier: @"SegueToMain" sender:self];
+    [self performSegueWithIdentifier: @"SegueToMain2" sender:self];
 }
 
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
