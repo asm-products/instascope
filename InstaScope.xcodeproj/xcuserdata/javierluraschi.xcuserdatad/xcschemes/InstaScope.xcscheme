@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2418041A161FE93F0035125B"
-               BuildableName = "InstaScopeTests.octest"
+               BuildableName = "InstaScopeTests.xctest"
                BlueprintName = "InstaScopeTests"
                ReferencedContainer = "container:InstaScope.xcodeproj">
             </BuildableReference>
@@ -47,7 +47,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2418041A161FE93F0035125B"
-               BuildableName = "InstaScopeTests.octest"
+               BuildableName = "InstaScopeTests.xctest"
                BlueprintName = "InstaScopeTests"
                ReferencedContainer = "container:InstaScope.xcodeproj">
             </BuildableReference>
